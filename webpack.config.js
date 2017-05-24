@@ -25,6 +25,12 @@ const options = {
       }
     ]
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000,
+    stats: 'minimal'
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack 2 - Starter! Now with Pug',

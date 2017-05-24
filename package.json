@@ -4,7 +4,7 @@
   "description": "webpack2 starter",
   "main": "index.js",
   "scripts": {
-    "dev": "node_modules/webpack/bin/webpack.js -d -w --progress --colors",
+    "dev": "webpack-dev-server",
     "prod": "node_modules/webpack/bin/webpack.js -p --progress --colors"
   },
   "repository": {
@@ -29,6 +29,7 @@
     "pug-loader": "^2.3.0",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.1",
-    "webpack": "^2.6.0"
+    "webpack": "^2.6.0",
+    "webpack-dev-server": "^2.4.5"
   }
 }
