@@ -1,5 +1,6 @@
 const path = require('path');
-const htmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 
 const options = {
   entry: './src/js/app.js',
@@ -8,7 +9,15 @@ const options = {
     filename: 'js/app.bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
+      {
+        test: /\.scss$/,
+        use: ExtractTextWebpackPlugin.extract({
+          fallbackLoader: 'style-loader',
+          loader: ['css-loader','sass-loader'],
+          publicPath: path.resolve(__dirname, 'dist')
+        })
+      },
       {
         test: /\.pug$/,
         loader: 'pug-loader',
@@ -17,13 +26,18 @@ const options = {
     ]
   },
   plugins: [
-    new htmlWebpackPlugin({
+    new HtmlWebpackPlugin({
       title: 'Webpack 2 - Starter! Now with Pug',
       minify: {
         collapseWhitespace: true
       },
       hash: true,
       template: './src/index-template.pug'
+    }),
+    new ExtractTextWebpackPlugin({
+      filename: 'css/main.css'
+      //disable: false,
+      //allChunks: true
     })
   ]
 }

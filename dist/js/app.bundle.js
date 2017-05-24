@@ -63,19 +63,30 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /* unknown exports provided */
 /* all exports used */
+/*!***************************!*\
+  !*** ./src/css/main.scss ***!
+  \***************************/
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9jc3MvbWFpbi5zY3NzP2ExY2YiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gcmVtb3ZlZCBieSBleHRyYWN0LXRleHQtd2VicGFjay1wbHVnaW5cblxuXG4vLy8vLy8vLy8vLy8vLy8vLy9cbi8vIFdFQlBBQ0sgRk9PVEVSXG4vLyAuL3NyYy9jc3MvbWFpbi5zY3NzXG4vLyBtb2R1bGUgaWQgPSAwXG4vLyBtb2R1bGUgY2h1bmtzID0gMCJdLCJtYXBwaW5ncyI6IkFBQUEiLCJzb3VyY2VSb290IjoiIn0=");
+
+/***/ }),
+/* 1 */
+/* unknown exports provided */
+/* all exports used */
 /*!***********************!*\
   !*** ./src/js/app.js ***!
   \***********************/
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("console.log('Lord Zevin what up');\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9qcy9hcHAuanM/NzFiNCJdLCJzb3VyY2VzQ29udGVudCI6WyJjb25zb2xlLmxvZygnTG9yZCBaZXZpbiB3aGF0IHVwJyk7XG5cblxuXG4vLy8vLy8vLy8vLy8vLy8vLy9cbi8vIFdFQlBBQ0sgRk9PVEVSXG4vLyAuL3NyYy9qcy9hcHAuanNcbi8vIG1vZHVsZSBpZCA9IDBcbi8vIG1vZHVsZSBjaHVua3MgPSAwIl0sIm1hcHBpbmdzIjoiQUFBQTsiLCJzb3VyY2VSb290IjoiIn0=");
+eval("// Webpack encounters this and has the test for .scss which\n// kicks off the loaders which then extract the result to the\n// stated file in the webpack config\nconst css = __webpack_require__(/*! ../css/main.scss */ 0);\n\nconsole.log('Lord Zevin what up');\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMS5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9qcy9hcHAuanM/NzFiNCJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBXZWJwYWNrIGVuY291bnRlcnMgdGhpcyBhbmQgaGFzIHRoZSB0ZXN0IGZvciAuc2NzcyB3aGljaFxuLy8ga2lja3Mgb2ZmIHRoZSBsb2FkZXJzIHdoaWNoIHRoZW4gZXh0cmFjdCB0aGUgcmVzdWx0IHRvIHRoZVxuLy8gc3RhdGVkIGZpbGUgaW4gdGhlIHdlYnBhY2sgY29uZmlnXG5jb25zdCBjc3MgPSByZXF1aXJlKCcuLi9jc3MvbWFpbi5zY3NzJyk7XG5cbmNvbnNvbGUubG9nKCdMb3JkIFpldmluIHdoYXQgdXAnKTtcblxuXG5cbi8vLy8vLy8vLy8vLy8vLy8vL1xuLy8gV0VCUEFDSyBGT09URVJcbi8vIC4vc3JjL2pzL2FwcC5qc1xuLy8gbW9kdWxlIGlkID0gMVxuLy8gbW9kdWxlIGNodW5rcyA9IDAiXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=");
 
 /***/ })
 /******/ ]);
