@@ -1,0 +1,29 @@
+{
+  "name": "webpack2-starter",
+  "version": "0.0.1",
+  "description": "webpack2 starter",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node_modules/webpack/bin/webpack.js -d -w --progress --colors",
+    "prod": "node_modules/webpack/bin/webpack.js -p --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillyDesignr/webpack2-starter.git"
+  },
+  "keywords": [
+    "webpack2"
+  ],
+  "author": "Jeremy Zevin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phillyDesignr/webpack2-starter/issues"
+  },
+  "homepage": "https://github.com/phillyDesignr/webpack2-starter#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^2.28.0",
+    "pug": "^2.0.0-rc.1",
+    "pug-loader": "^2.3.0",
+    "webpack": "^2.6.0"
+  }
+}
