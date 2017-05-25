@@ -2,6 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 
+const isProd = process.env.NODE_ENV === 'production';
+
+
+
 const options = {
   entry: './src/js/app.js',
   output: {
@@ -21,7 +25,7 @@ const options = {
       {
         test: /\.pug$/,
         loader: 'pug-loader',
-        options: {pretty: true}
+        options: {pretty: isProd}
       }
     ]
   },
@@ -41,9 +45,8 @@ const options = {
       template: './src/index-template.pug'
     }),
     new ExtractTextWebpackPlugin({
-      filename: 'css/main.css'
-      //disable: false,
-      //allChunks: true
+      filename: 'css/main.css',
+      disable: !isProd
     })
   ]
 }

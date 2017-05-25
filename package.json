@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
-    "prod": "npm run clean && node_modules/webpack/bin/webpack.js -p --progress --colors",
+    "prod": "npm run clean && NODE_ENV=production node_modules/webpack/bin/webpack.js -p --progress --colors",
     "clean": "rimraf ./dist/*"
   },
   "repository": {
