@@ -19,13 +19,21 @@ const options = {
         use: ExtractTextWebpackPlugin.extract({
           fallbackLoader: 'style-loader',
           loader: ['css-loader','sass-loader'],
-          publicPath: path.resolve(__dirname, 'dist')
+          publicPath: '../' //needed for prod paths to be correct for extracted files and their contained paths
         })
       },
       {
         test: /\.pug$/,
         loader: 'pug-loader',
         options: {pretty: isProd}
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[name]_[hash:6].[ext]',
+          outputPath: 'img/',
+        }
       }
     ]
   },

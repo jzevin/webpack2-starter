@@ -1,7 +1,22 @@
 $color: lightblue;
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'helveticaNeue', 'helvetica', sans-serif;
-  background-color: $color;
+  background: $color url( '../img/bg.png' );
   color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro {
+  text-align: center;
+}
+
+#happy {
+  width: 50vw;
 }

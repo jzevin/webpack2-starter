@@ -9,6 +9,9 @@
 ~*
 *~
 
+# dist - just for this
+dist/
+
 # npm
 npm-debug.log
 node_modules/
